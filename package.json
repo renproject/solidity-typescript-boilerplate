@@ -31,9 +31,9 @@
         "eth-gas-reporter": "^0.2.1",
         "ganache-cli": "^6.7.0",
         "patch-package": "^6.1.2",
-        "solc": "^0.5.9",
+        "solc": "0.5.12",
         "solidity-coverage": "^0.6.7",
-        "truffle": "5.0.15",
+        "truffle": "5.0.17",
         "truffle-hdwallet-provider": "^1.0.10",
         "truffle-plugin-verify": "^0.2.2",
         "truffle-typings": "^1.0.8",
@@ -44,9 +44,10 @@
         "typechain-target-truffle": "^1.0.0",
         "typechain-target-web3-v1": "^1.0.0",
         "typescript": "^3.5.2",
-        "web3": "^1.0.0-beta.52"
+        "web3": "^2.0.0-alpha",
+        "web3-utils": "^2.0.0-alpha"
     },
     "resolutions": {
-        "solc": "^0.5.9"
+        "solc": "0.5.12"
     }
 }
