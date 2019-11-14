@@ -2,8 +2,8 @@
 
 <!-- Replace ORG/REPO with organization and repository -->
 
-[![Build Status](https://travis-ci.org/ORG/REPO.svg?branch=master)](https://travis-ci.org/ORG/REPO)
-[![Coverage Status](https://coveralls.io/repos/github/ORG/REPO/badge.svg?branch=master)](https://coveralls.io/github/ORG/REPO?branch=master)
+[![Build Status](https://circleci.com/gh/renproject/solidity-typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/renproject/solidity-typescript-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/renproject/solidity-typescript-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/renproject/solidity-typescript-boilerplate?branch=master)
 
 ## Tests
 
