@@ -24,4 +24,4 @@ jobs:
         yarn coveralls
       env:
         CI: true
-        COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        COVERALLS_REPO_TOKEN: ${{ secretes.COVERALLS_REPO_TOKEN}}
