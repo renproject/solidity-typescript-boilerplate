@@ -21,5 +21,7 @@ jobs:
       run: |
         yarn install
         yarn coverage
+        yarn coveralls
       env:
         CI: true
+        COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
