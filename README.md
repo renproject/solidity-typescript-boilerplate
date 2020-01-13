@@ -2,7 +2,7 @@
 
 <!-- Replace ORG/REPO with organization and repository -->
 
-![Build Status](https://github.com/renproject/kv/workflows/nodejs/badge.svg)
+![Build Status](https://github.com/renproject/kv/workflows/solidity/badge.svg)
 
 [![Coverage Status](https://coveralls.io/repos/github/renproject/solidity-typescript-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/renproject/solidity-typescript-boilerplate?branch=master)
 
