@@ -2,7 +2,8 @@
 
 <!-- Replace ORG/REPO with organization and repository -->
 
-[![Build Status](https://circleci.com/gh/renproject/solidity-typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/renproject/solidity-typescript-boilerplate)
+![Build Status](https://github.com/renproject/kv/workflows/nodejs/badge.svg)
+
 [![Coverage Status](https://coveralls.io/repos/github/renproject/solidity-typescript-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/renproject/solidity-typescript-boilerplate?branch=master)
 
 ## Tests
