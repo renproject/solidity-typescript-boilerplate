@@ -1,6 +1,5 @@
-import "./helper/testUtils";
-
 import { ExampleInstance } from "../types/truffle-contracts";
+import "./helper/testUtils";
 
 const Example = artifacts.require("Example");
 
@@ -9,7 +8,7 @@ contract("Example", (accounts) => {
     let example: ExampleInstance;
 
     before(async () => {
-        example = await Example.new();;
+        example = await Example.new();
     });
 
     it("Can call increment", async () => {

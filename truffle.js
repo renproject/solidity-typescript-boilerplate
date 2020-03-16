@@ -40,9 +40,8 @@ module.exports = {
     },
     compilers: {
         solc: {
-            version: "0.5.8",
+            version: "0.5.16",
             settings: {
-                evmVersion: "petersburg",
                 optimizer: {
                     enabled: true,
                     runs: 200,
@@ -51,7 +50,8 @@ module.exports = {
         }
     },
     plugins: [
-        "truffle-plugin-verify"
+        "truffle-plugin-verify",
+        "solidity-coverage"
     ],
     api_keys: {
         etherscan: process.env.ETHERSCAN_KEY,

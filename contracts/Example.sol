@@ -1,14 +1,13 @@
-pragma solidity ^0.5.8;
+pragma solidity ^0.5.16;
 
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
 
 contract Example {
     using SafeMath for uint256;
 
-    uint public counter;
+    uint256 public counter;
 
-    constructor() public {
-    }
+    constructor() public {}
 
     function increment() public {
         counter = counter.add(1);
