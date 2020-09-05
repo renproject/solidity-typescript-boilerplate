@@ -1,7 +1,6 @@
 import * as chai from "chai";
 
 import BigNumber from "bignumber.js";
-
 import BN from "bn.js";
 
 interface Log {
@@ -23,7 +22,7 @@ interface TransactionReceipt {
         status: boolean,
         logsBloom: string,
     };
-    logs: Array<{
+    logs: {
         logIndex: number,
         transactionIndex: number,
         transactionHash: string,
@@ -34,7 +33,7 @@ interface TransactionReceipt {
         id: string,
         event: string,
         args: object,
-    }>;
+    }[];
 }
 
 // Chai helper for comparing logs

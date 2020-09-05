@@ -1,12 +1,10 @@
 
 import * as chai from "chai";
-import chaiAsPromised from "chai-as-promised";
-import chaiBigNumber from "chai-bignumber";
 import * as crypto from "crypto";
 
 import BigNumber from "bignumber.js";
-
-import BN from "bn.js";
+import chaiAsPromised from "chai-as-promised";
+import chaiBigNumber from "chai-bignumber";
 
 // Import chai log helper
 import "./logs";
@@ -29,28 +27,28 @@ const increaseTimeHelper = async (seconds: number) => {
     await new Promise((resolve, reject) => {
         web3.currentProvider.send(
             { jsonrpc: "2.0", method: "evm_increaseTime", params: [seconds], id: 0 } as any,
-            ((err, _) => {
-                if (err) {
-                    reject(err);
+            ((error, _response) => {
+                if (error) {
+                    reject(error);
                 }
                 web3.currentProvider.send({
-                    jsonrpc: '2.0',
-                    method: 'evm_mine',
+                    jsonrpc: "2.0",
+                    method: "evm_mine",
                     params: [],
                     id: new Date().getSeconds()
-                } as any, ((err, _) => {
-                    if (err) {
+                } as any, ((internalError, _responseInner) => {
+                    if (internalError) {
                         reject();
                     }
                     resolve();
                 }) as any);
             }) as any
-        )
+        );
     });
-}
+};
 
 const getCurrentTimestamp = async (): Promise<number> => {
-    const ts = new BigNumber((await web3.eth.getBlock(await web3.eth.getBlockNumber())).timestamp)
+    const ts = new BigNumber((await web3.eth.getBlock(await web3.eth.getBlockNumber())).timestamp);
     return ts.toNumber();
 };
 
