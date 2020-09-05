@@ -45,7 +45,7 @@ Add a `.env`, filling in the mnemonic and Kovan ethereum node (e.g. Infura):
 
 ```sh
 MNEMONIC="..."
-KOVAN_ETHEREUM_NODE="..."
+INFURA_KEY="..."
 ETHERSCAN_KEY="..."
 ```
 
